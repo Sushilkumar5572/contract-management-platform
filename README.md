@@ -1,16 +1,18 @@
-Contract Management Platform (Frontend Only)
+**Contract Management Platform (Frontend Only)**
 
-Overview
+*Overview*
+
 A frontend-only Contract Management Platform built using React (JavaScript).
 The application allows users to create reusable contract blueprints, generate contracts, manage contract lifecycle states, and fill contract fields — all without a backend.
 
 Focus areas: clean architecture, controlled lifecycle transitions, and usability.
 
-Deployment
+*Deployment*
+
 Live URL:
 https://your-deployment-link-here
 
-Tech Stack
+*Tech Stack*
 
 React (JavaScript)
 
@@ -20,7 +22,7 @@ localStorage (mock persistence)
 
 No backend
 
-Setup
+*Setup*
 
 Clone the repository
 
@@ -30,7 +32,7 @@ Run npm start
 
 Open http://localhost:3000
 
-Features
+*Features*
 
 Blueprint creation with configurable fields
 (Text, Date, Signature, Checkbox)
@@ -46,7 +48,7 @@ Contract dashboard with status filters
 Contract view with field filling
 (Editing disabled for Locked / Revoked contracts)
 
-Architecture
+*Architecture*
 
 Component-based React structure
 
@@ -56,7 +58,7 @@ localStorage abstraction for persistence
 
 No global state library
 
-Assumptions & Limitations
+*Assumptions & Limitations*
 
 Single-user system
 
@@ -66,7 +68,7 @@ Basic UI styling
 
 No automated tests
 
-Evaluation Focus
+*Evaluation Focus*
 
 Lifecycle correctness
 
