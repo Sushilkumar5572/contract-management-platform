@@ -10,7 +10,7 @@ Focus areas: clean architecture, controlled lifecycle transitions, and usability
 *Deployment*
 
 Live URL:
-https://your-deployment-link-here
+https://chic-melomakarona-2e8b7d.netlify.app/
 
 *Tech Stack*
 
