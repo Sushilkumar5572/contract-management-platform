@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+Contract Management Platform (Frontend Only)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+A frontend-only Contract Management Platform built using React (JavaScript).
+The application allows users to create reusable contract blueprints, generate contracts, manage contract lifecycle states, and fill contract fields — all without a backend.
 
-## Available Scripts
+Focus areas: clean architecture, controlled lifecycle transitions, and usability.
 
-In the project directory, you can run:
+Deployment
+Live URL:
+https://your-deployment-link-here
 
-### `npm start`
+Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React (JavaScript)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React Router
 
-### `npm test`
+localStorage (mock persistence)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No backend
 
-### `npm run build`
+Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run npm start
 
-### `npm run eject`
+Open http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Blueprint creation with configurable fields
+(Text, Date, Signature, Checkbox)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contract creation from blueprints
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Strict contract lifecycle:
+Created → Approved → Sent → Signed → Locked
+Revoked allowed at valid stages
 
-## Learn More
+Contract dashboard with status filters
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contract view with field filling
+(Editing disabled for Locked / Revoked contracts)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Architecture
 
-### Code Splitting
+Component-based React structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Business rules isolated in utility files
 
-### Analyzing the Bundle Size
+localStorage abstraction for persistence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+No global state library
 
-### Making a Progressive Web App
+Assumptions & Limitations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Single-user system
 
-### Advanced Configuration
+No authentication or backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Basic UI styling
 
-### Deployment
+No automated tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Evaluation Focus
 
-### `npm run build` fails to minify
+Lifecycle correctness
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clean, readable code
+
+Proper state management
+
+Usable UI without overdesign
